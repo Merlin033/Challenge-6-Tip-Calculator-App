@@ -15,8 +15,49 @@
     <title>Frontend Mentor | Tip calculator app</title>
   </head>
   <body>
-    Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
-    person Total / person Reset
+    <h1>splitter</h1>
+    <main class="container">
+      <div class="calc-container">
+        <h2>Bill</h2>
+        <form class="bill" dir="rtl">
+          <label for="price"
+            ><img src="./images/icon-dollar.svg" alt="dollar's icon" />
+          </label>
+          <input type="text" name="price" />
+        </form>
+        <h2>Select Tip %</h2>
+        <article class="buttons">
+          <button>5%</button>
+          <button>10%</button>
+          <button>15%</button>
+          <button>25%</button>
+          <button>50%</button>
+          <button>Custom</button>
+        </article>
+        <h2>Number of People</h2>
+        <form class="number" dir="rtl">
+          <label for="number"
+            ><img src="./images/icon-person.svg" alt="person's icon" />
+          </label>
+          <input type="text" name="number" />
+        </form>
+      </div>
+      <div class="result-container">
+        <article class="tip-amount">
+          <h2>Tip Amount</h2>
+          <p>/ person</p>
+          <span id="tipAmount"></span>
+        </article>
+        <article class="total">
+          <h2>Total</h2>
+          <p>/ person</p>
+          <span id="total"></span>
+        </article>
+        <div class="reset"><button class="reset">Reset</button></div>
+      </div>
+    </main>
+    <!-- Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
+    person Total / person Reset -->
     <script src="script.js"></script>
   </body>
 </html>
