@@ -19,11 +19,11 @@
     <main class="container">
       <div class="calc-container">
         <h2>Bill</h2>
-        <form class="bill" dir="rtl">
+        <form id="bill" oninput="resizeBillInput()">
           <label for="price"
             ><img src="./images/icon-dollar.svg" alt="dollar's icon" />
           </label>
-          <input type="text" name="price" />
+          <input type="text" id="billInput" name="price" />
         </form>
         <h2>Select Tip %</h2>
         <article class="buttons">
@@ -35,11 +35,11 @@
           <button id="custom"><input type="text" /></button>
         </article>
         <h2>Number of People</h2>
-        <form class="number" dir="ltr">
+        <form id="people" oninput="resizePeopleInput()">
           <label for="number"
             ><img src="./images/icon-person.svg" alt="person's icon" />
           </label>
-          <input type="text" name="number" />
+          <input type="text" id="peopleInput" name="number" />
         </form>
       </div>
       <div class="result-container">
