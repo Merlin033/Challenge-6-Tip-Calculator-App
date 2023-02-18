@@ -28,11 +28,11 @@ priceInput.addEventListener("input", (event) => {
 
   // Vérification 1: limiter la longueur totale à 8 caractères
   if (input.length > 8) {
-    input = input.slice(0, 8);
+    input = input.slice(0, 7);
   }
 
   // Vérification 2: n'autoriser que les chiffres et un seul point décimal
-  const regex = /^[0-9]+(\.[0-9]{0,2})?$/;
+  const regex = /^\d{0,4}(?:\.\d{0,2})?$/;
   if (!regex.test(input)) {
     input = input.slice(0, -1);
   }
