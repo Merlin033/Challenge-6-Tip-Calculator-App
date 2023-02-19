@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL here](https://www.frontendmentor.io/profile/Merlin033)
+- Live Site URL: [Site URL here](https://tip-calculator-app-opal-three.vercel.app/)
 
 ## My process
 
@@ -84,4 +84,4 @@ Do things step by step, that is to first make the skeleton of my html, then put 
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Merlin033)
+- Frontend Mentor - [@Merlin033](https://www.frontendmentor.io/profile/Merlin033)
