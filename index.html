@@ -15,7 +15,7 @@
     <title>Frontend Mentor | Tip calculator app</title>
   </head>
   <body>
-    <h1>splitter</h1>
+    <h1 id="title">splitter</h1>
     <main class="container">
       <div class="calc-container">
         <h2>Bill</h2>
@@ -23,7 +23,7 @@
           <label for="price"
             ><img src="./images/icon-dollar.svg" alt="dollar's icon" />
           </label>
-          <input type="text" id="billInput" name="price" />
+          <input type="text" id="billInput" name="price" value="0" />
         </form>
         <h2>Select Tip %</h2>
         <article class="buttons">
@@ -32,14 +32,25 @@
           <button>15%</button>
           <button>25%</button>
           <button>50%</button>
-          <button id="custom"><input type="text" /></button>
+          <button id="custom" oninput="resizeCustomInput()">
+            <input
+              type="text"
+              id="customTipInput"
+              name="custom"
+              value="Custom"
+            />
+          </button>
         </article>
-        <h2>Number of People</h2>
+        <div class="people-legend">
+          <h2>Number of People</h2>
+          <div class="zero">Can't be zero</div>
+        </div>
+
         <form id="people" oninput="resizePeopleInput()">
           <label for="number"
             ><img src="./images/icon-person.svg" alt="person's icon" />
           </label>
-          <input type="text" id="peopleInput" name="number" />
+          <input type="text" id="peopleInput" name="number" value="1" />
         </form>
       </div>
       <div class="result-container">
