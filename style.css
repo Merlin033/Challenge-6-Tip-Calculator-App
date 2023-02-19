@@ -6,6 +6,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  transition: 0.1s ease-in-out;
 }
 body {
   font-family: "Space Mono", monospace;
@@ -183,4 +184,85 @@ p {
   color: hsl(172, 67%, 45%);
   justify-self: end;
   line-height: 3rem;
+}
+
+/* Pour écran dont la largeur est supérieure ou égale à 930px */
+@media screen and (min-width: 930px) {
+  .container {
+    width: 918px;
+    height: 480px;
+    margin: 0 auto;
+    transform: scale(1);
+    transition: transform 0.2s ease-in-out;
+  }
+}
+
+/* Pour écran dont la largeur est inférieure à 930px */
+@media screen and (max-width: 929px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    transform: scale(0.8);
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+  }
+  .calc-container > h2,
+  .people-legend > h2 {
+    margin-bottom: 5px;
+  }
+  .calc-container {
+    margin: 32px;
+    padding: 16px;
+
+    flex: 1;
+    flex-wrap: nowrap;
+  }
+
+  .result-container {
+    margin: 0 32px 32px 32px;
+    padding: 16px;
+
+    flex: 1;
+  }
+}
+/* Pour écran dont la largeur est inférieure à 830px */
+@media screen and (max-width: 829px) {
+  .calc-container {
+    padding: 0;
+  }
+}
+/* Pour écran dont la largeur est inférieure à 780px */
+@media screen and (max-width: 779px) {
+  #title {
+    margin: 40px 0 40px 0;
+  }
+  body {
+    align-items: center;
+  }
+  .container {
+    width: 100%;
+    transform: scale(1);
+    transition: transform 0.2s ease-in-out;
+  }
+}
+/* Pour écran dont la largeur est inférieure à 420px */
+@media screen and (max-width: 419px) {
+  .result-container {
+    flex: 0;
+  }
+  .calc-container {
+    justify-content: space-evenly;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  button {
+    width: 47%;
+  }
+}
+@media screen and (max-height: 679px) {
+  .calc-container {
+    margin-top: 10px;
+  }
 }
